@@ -1,0 +1,11 @@
+#!/bin/bash
+
+C_BLACK="\e[0;30;1m"
+C_RED="\e[0;31;1m"
+C_GREEN="\e[0;32;1m"
+C_YELL="\e[0;33;1m"
+C_BLUE="\e[0;34;1m"
+C_MAGEN="\e[0;35;1m"
+C_CYAN="\e[0;36;1m"
+C_WHITE="\e[0;37;1m"
+C_RES="\e[0m"
