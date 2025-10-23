@@ -4,4 +4,6 @@ A very simple bash tool to generate a pretty, terminal-servable text file with y
 
 ## Usage
 
-Add your information in plain text files and build script then run ./build 
+Add your information in plain text files and build script then run ./build
+
+![screenshot](images/screenshot.png) 
