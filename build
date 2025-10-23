@@ -1,0 +1,10 @@
+#!/bin/bash
+. ./colors || exit
+
+about=$(./make-about)
+
+links=$(./make-links)
+
+echo -e "$about\n\n$links" | ./tools/box -hp 2 -vp 1 -T plain
+
+

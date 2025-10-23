@@ -1,0 +1,6 @@
+#!/bin/bash
+
+. ./colors || exit
+
+fold -w 50 -s plain/about.txt | ./tools/box -t "[About Me]" -vp 1 -hp 2 -bc "${C_GREEN}" -tc "${C_WHITE}"
+

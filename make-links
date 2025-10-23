@@ -1,0 +1,7 @@
+#!/bin/bash
+
+
+. ./colors || exit
+
+cat plain/links.txt | ./tools/box -t "[My Links]" -vp 1 -hp 2 -bc "${C_GREEN}" -tc "${C_CYAN}"
+
