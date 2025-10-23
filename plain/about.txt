@@ -1,1 +1,4 @@
-Hi! I'm James, a CS student at MSU. My hobbies include lifting, music, cubing, making games, and all things open source! I love doing anything that can put a smile on somebody else's face.
+Hi! I'm James, a CS student at MSU. My hobbies include 
+lifting, music, cubing, making games, and all things open  
+source! I love doing anything that can put a smile on 
+somebody else's face.

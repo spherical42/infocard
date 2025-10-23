@@ -2,5 +2,24 @@
 
 . ./colors || exit
 
-fold -w 50 -s plain/about.txt | ./tools/box -t "[About Me]" -vp 1 -hp 2 -bc "${C_GREEN}" -tc "${C_WHITE}"
+longest_ln_num() {
+    awk '{ if (length > max) { max = length; line = NR } } END { print line+0 }' "$1"
+}
+
+
+longlink=$(wc -L < plain/links.txt)
+
+fold -w $longlink -s plain/about.txt > plain/about.txt.tmp && mv plain/about.txt.tmp plain/about.txt
+
+longabout=$(wc -L < plain/about.txt)
+
+hpad=$(( ((longlink - longabout) / 2) + 2 ))
+
+if (( ((longlink - longabout) % 2) > 0 )) then
+	ln=$(longest_ln_num plain/about.txt)
+	sed -i "${ln}s/$/ /" plain/about.txt
+fi
+
+
+cat plain/about.txt | ./tools/box -t "[About Me]" -vp 1 -hp $hpad -bc "${C_GREEN}" -tc "${C_MAGEN}"
 
