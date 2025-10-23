@@ -6,5 +6,4 @@ A very simple bash tool to generate a pretty, terminal-servable text file with y
 
 ## Usage
 
-Replace my information in the text files in the plain directory.
-Then run ./build > infocard.txt
+Add your information in plain text files and build script then run ./build 

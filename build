@@ -1,12 +1,12 @@
 #!/bin/bash
 . ./colors || exit
 
-
+title="James Ayerst"
 
 about=$(./make-about)
 links=$(./make-links)
 
 
-echo -e "$about\n\n$links" | ./tools/box -hp 2 -vp 1 -T plain
+echo -e "$about\n\n$links" | ./tools/box -hp 2 -vp 1 -t "[ ${title} ]" -tc "${C_BLUE}" -T plain | ./tools/box -hp 2 -vp 1 -T plain 
 
 
