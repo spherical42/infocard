@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 C_BLACK=$'\e[0;30;1m'
 C_RED=$'\e[0;31;1m'
